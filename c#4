@@ -1,0 +1,35 @@
+using System;
+public class SearchPositiveAndNegativeNumbers
+{
+    public static void Main(string[] args)
+    {
+        int total = 10;
+        float[] numbers = new float[total];
+ 
+        float totalPositive = 0.0f, totalNegative = 0.0f;
+        int countPositive = 0, countNegative = 0;
+ 
+        for (int i = 0; i < total; i++)
+        {
+            numbers[i] = Convert.ToSingle(Console.ReadLine());
+        }
+ 
+        for (int i = 0; i < total; i++)
+        {
+            if (numbers[i] < 0) // Negative
+            {
+                totalNegative = totalNegative + numbers[i];
+                countNegative++;
+            }
+   
+            if (numbers[i] > 0) // Positive
+            {
+                totalPositive = totalPositive + numbers[i];
+                countPositive++;
+            }
+        }
+ 
+        Console.WriteLine("Average numbers negatives is {0}", totalNegative / countNegative);
+        Console.WriteLine("Average numbers positives is {0}", totalPositive / countPositive);
+    }
+}
