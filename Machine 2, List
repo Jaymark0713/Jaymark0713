@@ -1,0 +1,32 @@
+System;
+using System.Collections.Generic;
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        List<char> vowels = new List<char> { 'a', 'e', 'i', 'o', 'u' };
+        List<char> allVowels = new List<char>();
+
+        Console.WriteLine("Enter 10 words:");
+
+        for (int i = 0; i < 10; i++)
+        {
+            string word = Console.ReadLine().ToLower();
+            foreach (char c in word)
+            {
+                if (vowels.Contains(c) && !allVowels.Contains(c))
+                {
+                    allVowels.Add(c);
+                }
+            }
+        }
+
+        Console.WriteLine("Vowels used in order:");
+        foreach (char vowel in allVowels)
+        {
+            Console.Write(vowel + " ");
+        }
+    }
+}
+
