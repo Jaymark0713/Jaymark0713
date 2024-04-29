@@ -1,0 +1,26 @@
+using System;
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        string input;
+        string allVowels = "";
+
+        Console.WriteLine("Enter 10 words:");
+        for (int i = 0; i < 10; i++)
+        {
+            input = Console.ReadLine().ToLower();
+            foreach (char c in input)
+            {
+                if ("aeiou".Contains(c))
+                {
+                    allVowels += c;
+                }
+            }
+        }
+
+        Console.WriteLine("All vowels used in order:");
+        Console.WriteLine(allVowels);
+    }
+}
