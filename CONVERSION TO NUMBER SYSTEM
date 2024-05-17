@@ -1,0 +1,25 @@
+using System;
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        Console.Write("Enter your name: ");
+        string name = Console.ReadLine();
+
+        Console.WriteLine("Binary: " + StringToJay(name, 2));
+        Console.WriteLine("Octal: " + StringToJay(name, 8));
+        Console.WriteLine("Decimal: " + StringToJay(name, 10));
+        Console.WriteLine("Hexadecimal: " + StringToJay(name, 16));
+    }
+
+    static string StringToJay(string str, int baseValue)
+    {
+        string result = "";
+        foreach (char c in str)
+        {
+            result += Convert.ToString(c, baseValue) + " ";
+        }
+        return result.Trim();
+    }
+}
