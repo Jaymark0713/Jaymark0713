@@ -1,0 +1,75 @@
+index.html
+<html>
+
+<head>
+
+<title>BSIT1A-Alicando, Jaymark</title>
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="navigation">
+<ul>
+<li><a class="active" href="#home">Home</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#gallery">Gallery</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</div>
+<img src="Alicando,Jaymark_IMG/Alicando,Jaymark1.jpg.jpg">
+</body>
+</html>
+
+style.css
+
+.navigation{ background: #E7E5E0;
+
+overflow: hidden;
+
+}
+
+.navigation div{
+
+}
+
+float: right;
+
+.navigation ul
+
+list-style:none;
+
+background:#E7E5E0;
+
+text-align:center;
+
+padding:10px;
+
+margin:5px;
+
+.navigation li {
+
+display:inline-block;
+
+}
+
+.navigation a{
+
+text-decoration:none;
+
+color:rgb(37, 37, 37);
+
+width: 30px;
+
+padding:40px;
+
+font-size:24px; font-family: Helvetica;
+
+}
+
+.navigation a:hover{
+
+background:#837e7e;
+
+transition:0.4s;
+
+}
